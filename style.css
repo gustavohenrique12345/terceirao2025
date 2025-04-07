@@ -19,22 +19,24 @@ rotacao-botao{
 .apresenta-lista{
     display: none;
 }
-.menu-acessibilidade{
-    position: fixed;
-    top:2rem;
-    right:20px;
-    z-index: 1000;
+    :root {
+        --laranja-claro: #FF862A;
+        --alto-contraste-fundo: #000000;
+        --alto-contraste-texto: #ffffff;
+        --alto-contraste-link: #ffd700;
+    }
+    .alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
 }
-.rotacao-botao{ 
-    transform: rotate(-90deg);
-    transform-origin: right center;
+.alto-contraste #tropicalia {
+    background: none;
 }
-.opcoes-acessibilidade{
-    margin-top:10px;
-    display: flex;
-    flex-direction: column;
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
 }
-.opcoes-acessibilidade button{
-    margin-bottom: 5px;
+.alto-contraste .fundo-galeria {
+    background: none;
 }
-
